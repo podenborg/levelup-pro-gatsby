@@ -1,12 +1,15 @@
 backend:
   name: github
+  branch: master
+  api_root: https://api.github.com
+  site_domain: cms.netlify.com
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   repo: podenborg/levelup-pro-gatsby
-
 media_folder: static/assets
-
 collections:
   - name: post
-    label: Posts
+    label: Post
     folder: src/posts
     create: true
     fields:
