@@ -102,8 +102,8 @@ class Header extends React.Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
-              </li>
+                <Link to="/about">About Us</Link>
+              </li>              
             </ul>
           </MainNav>
         </HeaderContainer>    

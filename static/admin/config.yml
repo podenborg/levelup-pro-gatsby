@@ -1,12 +1,12 @@
 backend:
   name: github
   branch: master
+  site_domain: https://quirky-carson-8d4332.netlify.app
   api_root: https://api.github.com
-  site_domain: cms.netlify.com
   base_url: https://api.netlify.com
   auth_endpoint: auth
   repo: podenborg/levelup-pro-gatsby
-  
+
 media_folder: static/assets
 
 collections:
@@ -18,3 +18,4 @@ collections:
       - { name: title, label: Title }
       - { name: date, label: Created At, widget: date }
       - { name: body, label: Post, widget: markdown }
+      - { name: image, label: Image, widget: image }
