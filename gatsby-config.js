@@ -4,7 +4,7 @@ module.exports = {
     description: `A new blog.`,
     author: `@gatsbyjs`,
   },
-  pathPrefix: `/levelup-pro-gatsby`,
+  // pathPrefix: `/levelup-pro-gatsby`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -37,6 +37,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
