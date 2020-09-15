@@ -4,6 +4,7 @@ backend:
   repo: podenborg/levelup-pro-gatsby
 
 media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: post
