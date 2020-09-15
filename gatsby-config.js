@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -6,6 +10,13 @@ module.exports = {
   },
   // pathPrefix: `/levelup-pro-gatsby`,
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `7jhgkk1x2uxr`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      }
+    },
     `gatsby-plugin-react-helmet`,        
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,8 +38,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
-    `gatsby-transformer-remark`,
+    },    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -44,6 +54,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify-cms`,   
+    `gatsby-transformer-remark`,
   ],
 }
