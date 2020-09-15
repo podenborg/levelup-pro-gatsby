@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: podenborg/levelup-pro-gatsby
 
 media_folder: static/assets
 
