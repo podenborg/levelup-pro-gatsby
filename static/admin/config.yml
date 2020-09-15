@@ -1,10 +1,6 @@
 backend:
   name: github
-  branch: master
-  site_domain: https://quirky-carson-8d4332.netlify.app
-  api_root: https://api.github.com
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  branch: master  
   repo: podenborg/levelup-pro-gatsby
 
 media_folder: static/assets
